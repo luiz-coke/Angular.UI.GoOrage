@@ -1,4 +1,4 @@
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem } from '@avanade/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
@@ -88,38 +88,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'Bubble Maps',
         link: '/pages/maps/bubble',
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    icon: 'nb-bar-chart',
-    children: [
-      {
-        title: 'Echarts',
-        link: '/pages/charts/echarts',
-      },
-      {
-        title: 'Charts.js',
-        link: '/pages/charts/chartjs',
-      },
-      {
-        title: 'D3',
-        link: '/pages/charts/d3',
-      },
-    ],
-  },
-  {
-    title: 'Editors',
-    icon: 'nb-title',
-    children: [
-      {
-        title: 'TinyMCE',
-        link: '/pages/editors/tinymce',
-      },
-      {
-        title: 'CKEditor',
-        link: '/pages/editors/ckeditor',
       },
     ],
   },

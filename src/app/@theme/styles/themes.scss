@@ -1,10 +1,8 @@
-// @nebular theming framework
-@import '~@nebular/theme/styles/theming';
-// @nebular out of the box themes
-@import '~@nebular/theme/styles/themes';
+@import '~@avanade/theme/styles/theming';
+@import '~@avanade/theme/styles/themes';
 
 // which themes you what to enable (empty to enable all)
-$nb-enabled-themes: (default, cosmic);
+$nb-enabled-themes: (default, go-orange);
 
 $nb-themes: nb-register-theme((
  // app wise variables for each theme
@@ -24,4 +22,4 @@ $nb-themes: nb-register-theme((
 
   font-main: Roboto,
   font-secondary: Exo,
-), cosmic, cosmic);
+), go-orange, go-orange);

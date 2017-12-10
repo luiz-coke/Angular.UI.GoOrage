@@ -15,7 +15,7 @@ import {
   NbThemeModule,
   NbUserModule,
   NbCheckboxModule,
-} from '@nebular/theme';
+} from '@avanade/theme';
 
 import {
   FooterComponent,
@@ -34,6 +34,7 @@ import {
 } from './layouts';
 import { DEFAULT_THEME } from './styles/theme.default';
 import { COSMIC_THEME } from './styles/theme.cosmic';
+import { GO_ORANGE_THEME } from './styles/theme.go-orange';
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 
@@ -74,9 +75,9 @@ const PIPES = [
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'cosmic',
+      name: 'go-orange',
     },
-    [ DEFAULT_THEME, COSMIC_THEME ],
+    [ DEFAULT_THEME, COSMIC_THEME, GO_ORANGE_THEME ],
   ).providers,
   ...NbSidebarModule.forRoot().providers,
   ...NbMenuModule.forRoot().providers,
