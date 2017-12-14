@@ -2,7 +2,7 @@
 
 @include nb-install-component() {
 
-  nb-card-body {
+  box-body {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -43,7 +43,7 @@
     }
   }
 
-  nb-card-footer {
+  box-footer {
     display: flex;
     justify-content: space-around;
     padding: 0.75rem 0;

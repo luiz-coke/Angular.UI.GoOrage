@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { NbMenuService, NbSidebarService } from '@avanade/theme';
+import { MenuService, SidebarService } from '@avanade/theme';
 import { UserService } from '../../../@core/data/users.service';
 import { AnalyticsService } from '../../../@core/utils/analytics.service';
 
@@ -18,8 +18,8 @@ export class HeaderComponent implements OnInit {
 
   userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
 
-  constructor(private sidebarService: NbSidebarService,
-              private menuService: NbMenuService,
+  constructor(private sidebarService: SidebarService,
+              private menuService: MenuService,
               private userService: UserService,
               private analyticsService: AnalyticsService) {
   }

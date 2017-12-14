@@ -1,8 +1,8 @@
-<nb-card>
-  <nb-card-header>
+<box>
+  <box-header>
     Toaster configuration
-  </nb-card-header>
-  <nb-card-body>
+  </box-header>
+  <box-body>
     <toaster-container [toasterconfig]="config"></toaster-container>
 
     <div class="row">
@@ -72,11 +72,11 @@
         <div><nb-checkbox [(ngModel)]="isCloseButton">Close button</nb-checkbox></div>
       </div>
     </div>
-  </nb-card-body>
+  </box-body>
 
-  <nb-card-footer>
+  <box-footer>
     <button class="btn btn-primary" (click)="makeToast()">Show toast</button>
     <button class="btn btn-success" (click)="openRandomToast()">Random toast</button>
     <button class="btn btn-danger" (click)="clearToasts()">Clear all toasts</button>
-  </nb-card-footer>
-</nb-card>
+  </box-footer>
+</box>

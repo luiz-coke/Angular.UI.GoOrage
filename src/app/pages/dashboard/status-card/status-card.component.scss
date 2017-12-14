@@ -2,13 +2,13 @@
 @import '~@avanade/theme/styles/global/bootstrap/hero-buttons';
 
 @include nb-install-component() {
-  nb-card {
+  box {
     flex-direction: row;
     align-items: center;
     height: 6rem;
     overflow: visible;
 
-    $bevel: btn-hero-bevel(nb-theme(card-bg));
+    $bevel: btn-hero-bevel(nb-theme(box-bg));
     $shadow: nb-theme(btn-hero-shadow);
     box-shadow: $bevel, $shadow;
 
@@ -24,7 +24,7 @@
       width: 5.75rem;
       height: 4.75rem;
       font-size: 3.75rem;
-      border-radius: nb-theme(card-border-radius);
+      border-radius: nb-theme(box-border-radius);
       transition: width 0.4s ease;
       transform: translate3d(0, 0, 0);
       -webkit-transform-style: preserve-3d;
@@ -50,7 +50,7 @@
     }
 
     &:hover {
-      background: lighten(nb-theme(card-bg), 5%);
+      background: lighten(nb-theme(box-bg), 5%);
 
       .icon {
         &.primary {
@@ -69,10 +69,10 @@
     }
 
     &.off {
-      color: nb-theme(card-fg);
+      color: nb-theme(box-fg);
 
       .icon {
-        color: nb-theme(card-fg);
+        color: nb-theme(box-fg);
 
         &.primary, &.success, &.info, &.warning {
           box-shadow: none;
@@ -81,7 +81,7 @@
       }
 
       .title {
-        color: nb-theme(card-fg);
+        color: nb-theme(box-fg);
       }
     }
 
@@ -98,19 +98,19 @@
       font-family: nb-theme(font-secondary);
       font-size: 1.25rem;
       font-weight: nb-theme(font-weight-bold);
-      color: nb-theme(card-fg-heading);
+      color: nb-theme(box-fg-heading);
     }
 
     .status {
       font-size: 1rem;
       font-weight: nb-theme(font-weight-light);
       text-transform: uppercase;
-      color: nb-theme(card-fg);
+      color: nb-theme(box-fg);
     }
   }
 
   @include nb-for-theme(cosmic) {
-    nb-card {
+    box {
       &.off .icon-container {
         border-right: 1px solid nb-theme(separator);
       }
@@ -127,7 +127,7 @@
         width: 7rem;
         height: 100%;
         font-size: 4.5rem;
-        border-radius: nb-theme(card-border-radius) 0 0 nb-theme(card-border-radius);
+        border-radius: nb-theme(box-border-radius) 0 0 nb-theme(box-border-radius);
       }
 
       .title {

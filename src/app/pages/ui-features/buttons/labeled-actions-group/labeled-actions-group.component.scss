@@ -29,7 +29,7 @@
     }
   }
   @include media-breakpoint-down(sm) {
-    nb-card-body {
+    box-body {
       padding: 1rem;
     }
 

@@ -1,5 +1,5 @@
 @import '../../../../@theme/styles/themes';
-@import '~@avanade/theme/components/card/card.component.theme';
+@import '~@avanade/theme/components/box/box.component.theme';
 
 @include nb-install-component() {
 
@@ -30,7 +30,7 @@
   }
 
   .room-bg {
-    fill: nb-theme(card-bg);
+    fill: nb-theme(box-bg);
     stroke: transparent;
     cursor: pointer;
     stroke-width: 4px;
@@ -62,7 +62,7 @@
   }
 
   .header {
-    @include nb-card-header();
+    @include box-header();
     border-bottom: none;
     padding-bottom: 0;
   }

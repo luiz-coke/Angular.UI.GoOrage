@@ -1,6 +1,6 @@
-import { NbMenuItem } from '@avanade/theme';
+import { MenuItem } from '@avanade/theme';
 
-export const MENU_ITEMS: NbMenuItem[] = [
+export const MENU_ITEMS: MenuItem[] = [
   {
     title: 'Dashboard',
     icon: 'nb-home',
@@ -100,27 +100,5 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/tables/smart-table',
       },
     ],
-  },
-  {
-    title: 'Auth',
-    icon: 'nb-locked',
-    children: [
-      {
-        title: 'Login',
-        link: '/auth/login',
-      },
-      {
-        title: 'Register',
-        link: '/auth/register',
-      },
-      {
-        title: 'Request Password',
-        link: '/auth/request-password',
-      },
-      {
-        title: 'Reset Password',
-        link: '/auth/reset-password',
-      },
-    ],
-  },
+  }
 ];

@@ -27,7 +27,7 @@ export class ModalsComponent {
     const activeModal = this.modalService.open(ModalComponent, {
       size: 'sm',
       backdrop: 'static',
-      container: 'nb-layout',
+      container: 'layout-page',
     });
 
     activeModal.componentInstance.modalHeader = 'Static modal';
