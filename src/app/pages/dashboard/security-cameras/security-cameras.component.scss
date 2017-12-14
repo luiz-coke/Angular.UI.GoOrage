@@ -3,17 +3,17 @@
 @import '~bootstrap/scss/mixins/breakpoints';
 
 @include nb-install-component() {
-  nb-card-header {
+  box-header {
     padding: 0;
     border: none;
   }
 
-  nb-card-body {
+  box-body {
     padding: 0;
     position: relative;
   }
 
-  nb-card-footer {
+  box-footer {
     padding: 1rem 0;
     border: none;
   }

@@ -64,7 +64,7 @@
   }
 
   @include media-breakpoint-down(is) {
-    ngx-default-buttons /deep/ nb-card-header {
+    ngx-default-buttons /deep/ box-header {
       flex-direction: column;
       align-items: left;
 
@@ -82,7 +82,7 @@
       }
     }
 
-    ngx-default-buttons /deep/ nb-card-header {
+    ngx-default-buttons /deep/ box-header {
       flex-direction: column;
       margin-bottom: 0.5rem;
     }

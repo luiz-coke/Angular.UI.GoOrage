@@ -1,17 +1,17 @@
 @import '../../../@theme/styles/themes';
-@import '~@avanade/theme/components/card/card.component.theme';
+@import '~@avanade/theme/components/box/box.component.theme';
 @import '~@avanade/theme/styles/global/typography/typography';
 @import '~bootstrap/scss/mixins/breakpoints';
 @import '~@avanade/theme/styles/global/bootstrap/breakpoints';
 
 @include nb-install-component() {
 
-  nb-card {
+  box {
     display: flex;
     flex-direction: row;
   }
 
-  nb-card-body {
+  box-body {
     overflow: hidden;
   }
 
@@ -21,11 +21,11 @@
     width: 20rem;
     height: 100%;
     z-index: 2;
-    box-shadow: nb-theme(card-shadow);
+    box-shadow: nb-theme(box-shadow);
   }
 
   .table-header {
-    @include nb-card-header();
+    @include box-header();
     font-size: 1.25rem;
 
     .subtitle {

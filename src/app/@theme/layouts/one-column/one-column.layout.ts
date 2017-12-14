@@ -4,28 +4,28 @@ import { Component } from '@angular/core';
   selector: 'ngx-one-column-layout',
   styleUrls: ['./one-column.layout.scss'],
   template: `
-    <nb-layout>
-      <nb-layout-header fixed>
+    <layout-page>
+      <layout-header fixed>
         <ngx-header></ngx-header>
-      </nb-layout-header>
+      </layout-header>
 
-      <nb-sidebar class="menu-sidebar" tag="menu-sidebar" responsive>
-        <nb-sidebar-header>
+      <sidebar-layout class="menu-sidebar" tag="menu-sidebar" responsive>
+        <sidebar-header>
           <a href="#" class="btn btn-hero-success main-btn">
             <i class="ion ion-social-github"></i> <span>Support Us</span>
           </a>
-        </nb-sidebar-header>
+        </sidebar-header>
         <ng-content select="nb-menu"></ng-content>
-      </nb-sidebar>
+      </sidebar-layout>
 
-      <nb-layout-column>
+      <layout-column>
         <ng-content select="router-outlet"></ng-content>
-      </nb-layout-column>
+      </layout-column>
 
-      <nb-layout-footer fixed>
+      <layout-footer fixed>
         <ngx-footer></ngx-footer>
-      </nb-layout-footer>
-    </nb-layout>
+      </layout-footer>
+    </layout-page>
   `,
 })
 export class OneColumnLayoutComponent {

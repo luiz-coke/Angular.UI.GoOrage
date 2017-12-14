@@ -13,7 +13,7 @@ import { AnalyticsService } from '../../../@core/utils/analytics.service';
         <input type="checkbox" [checked]="currentBoolTheme()" (change)="toggleTheme(theme.checked)" #theme>
         <span class="slider"></span>
       </div>
-      <span class="cosmic">Cosmic</span>
+      <span class="cosmic">Go Orange</span>
     </label>
   `,
 })
@@ -39,10 +39,10 @@ export class ThemeSwitcherComponent implements OnInit {
   }
 
   private themeToBool(theme: NbJSThemeOptions) {
-    return theme.name === 'cosmic';
+    return theme.name === 'go-orange';
   }
 
   private boolToTheme(theme: boolean) {
-    return theme ? 'cosmic' : 'default';
+    return theme ? 'go-orange' : 'default';
   }
 }

@@ -1,5 +1,5 @@
-<nb-card>
-  <nb-card-header>
+<box>
+  <box-header>
     <span>Default Buttons</span>
     <div class="dropdown" ngbDropdown>
       <button class="btn btn-primary" type="button" ngbDropdownToggle>
@@ -9,8 +9,8 @@
         <li class="dropdown-item" *ngFor="let v of buttonsViews" (click)="this.selectedView = v">{{ v.title }}</li>
       </ul>
     </div>
-  </nb-card-header>
-  <nb-card-body>
+  </box-header>
+  <box-body>
     <div class="row">
       <div class="example-container col-md-4" *ngFor="let b of buttons[selectedView.key]">
         <div class="container-title">
@@ -44,5 +44,5 @@
         </div>
       </div>
     </div>
-  </nb-card-body>
-</nb-card>
+  </box-body>
+</box>

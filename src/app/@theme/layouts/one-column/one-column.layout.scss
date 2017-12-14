@@ -3,11 +3,11 @@
 @import '~@avanade/theme/styles/global/bootstrap/breakpoints';
 
 @include nb-install-component() {
-  nb-layout-column.small {
+  layout-column.small {
     flex: 0.15 !important;
   }
 
-  nb-sidebar.settings-sidebar {
+  sidebar-layout.settings-sidebar {
     $sidebar-width: 7.5rem;
 
     transition: width 0.3s ease;
@@ -43,7 +43,7 @@
     }
   }
 
-  nb-sidebar.menu-sidebar {
+  sidebar-layout.menu-sidebar {
 
     margin-top: nb-theme(sidebar-header-gap);
 
@@ -53,7 +53,7 @@
       border-top-right-radius: nb-theme(radius);
     }
 
-    /deep/ nb-sidebar-header {
+    /deep/ sidebar-header {
       padding-bottom: 0.5rem;
       text-align: center;
     }
@@ -81,7 +81,7 @@
 
     &.compacted {
 
-      /deep/ nb-sidebar-header {
+      /deep/ sidebar-header {
         padding-left: 0;
         padding-right: 0;
       }
@@ -109,7 +109,7 @@
 
   @include media-breakpoint-down(sm) {
 
-    nb-sidebar.menu-sidebar {
+    sidebar-layout.menu-sidebar {
 
       margin-top: 0;
 

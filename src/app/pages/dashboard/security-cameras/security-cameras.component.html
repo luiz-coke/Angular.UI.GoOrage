@@ -1,5 +1,5 @@
-<nb-card size="xlarge">
-  <nb-card-header>
+<box size="xlarge">
+  <box-header>
     <div class="cameras-card-header">
       <span class="cameras-card-title">Security Cameras</span>
       <span class="cameras-filter">
@@ -11,8 +11,8 @@
         </a>
       </span>
     </div>
-  </nb-card-header>
-  <nb-card-body>
+  </box-header>
+  <box-body>
     <div class="cameras single-view" *ngIf="isSingleView">
       <div class="camera" [style.background-image]="'url(' + selectedCamera.source + ')'">
         <span>{{ selectedCamera.title }}</span>
@@ -24,8 +24,8 @@
         <span>{{ camera.title }}</span>
       </div>
     </div>
-  </nb-card-body>
-  <nb-card-footer>
+  </box-body>
+  <box-footer>
     <nb-actions size="medium" fullWidth>
       <nb-action>
         <i class="nb-pause-outline"></i><span>Pause</span>
@@ -40,5 +40,5 @@
         <i class="nb-gear"></i><span>Setup</span>
       </nb-action>
     </nb-actions>
-  </nb-card-footer>
-</nb-card>
+  </box-footer>
+</box>

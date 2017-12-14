@@ -18,7 +18,7 @@
     width: 30%;
   }
 
-  nb-card {
+  box {
     display: flex;
     flex-direction: row;
   }
@@ -50,7 +50,7 @@
       border: none;
     }
 
-    nb-card {
+    box {
       flex-direction: column;
       justify-content: space-between;
 

@@ -3,7 +3,7 @@
 
 @include nb-install-component() {
 
-  nb-card-body {
+  box-body {
     padding: 0 1.25rem 1.25rem 0;
     display: flex;
     flex-wrap: wrap;

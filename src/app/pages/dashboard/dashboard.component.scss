@@ -3,7 +3,7 @@
 @import '~@avanade/theme/styles/global/bootstrap/breakpoints';
 
 @include nb-install-component() {
-  .solar-card nb-card-header {
+  .solar-card box-header {
     border: none;
     padding-bottom: 0;
   }
@@ -15,7 +15,7 @@
   }
 
   @include media-breakpoint-down(is) {
-    /deep/ nb-card.large-card {
+    /deep/ box.large-card {
       height: nb-theme(card-height-medium);
     }
   }

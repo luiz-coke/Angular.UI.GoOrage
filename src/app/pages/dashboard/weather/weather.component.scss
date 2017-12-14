@@ -4,11 +4,11 @@
 
 @include nb-install-component() {
 
-  nb-card {
+  box {
     background-image: nb-theme(radial-gradient);
   }
 
-  nb-card-body {
+  box-body {
     height: 100%;
     padding: 2rem;
     color: nb-theme(color-fg);
@@ -120,7 +120,7 @@
   }
 
   @include media-breakpoint-down(xs) {
-    nb-card-body {
+    box-body {
       padding-left: 1rem;
       padding-right: 1rem;
     }

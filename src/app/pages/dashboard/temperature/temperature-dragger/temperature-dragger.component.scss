@@ -49,7 +49,7 @@
     position: absolute;
     width: 5.25rem;
     height: 5.25rem;
-    background-color: nb-theme(card-bg);
+    background-color: nb-theme(box-bg);
     border-radius: 50%;
     bottom: 2%;
     left: 50%;
@@ -65,11 +65,11 @@
     border: 2px solid nb-theme(separator);
 
     &:hover {
-      background-color: lighten(nb-theme(card-bg), 5%);
+      background-color: lighten(nb-theme(box-bg), 5%);
     }
 
     &:active {
-      background-color: darken(nb-theme(card-bg), 5%);
+      background-color: darken(nb-theme(box-bg), 5%);
       box-shadow: none;
     }
 
@@ -87,7 +87,7 @@
 
     .power-bg {
       border: none;
-      box-shadow: nb-theme(card-shadow);
+      box-shadow: nb-theme(box-shadow);
       text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
     }
   }

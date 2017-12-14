@@ -4,13 +4,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {
-  NbActionsModule,
-  NbCardModule,
-  NbLayoutModule,
-  NbMenuModule,
+  BoxModule,
+  LayoutModule,
+  MenuModule,
+  SidebarModule,
+  
   NbRouteTabsetModule,
   NbSearchModule,
-  NbSidebarModule,
+  NbActionsModule,
   NbTabsetModule,
   NbThemeModule,
   NbUserModule,
@@ -39,17 +40,20 @@ import { GO_ORANGE_THEME } from './styles/theme.go-orange';
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 
 const NB_MODULES = [
-  NbCardModule,
-  NbLayoutModule,
+  NgbModule,
+  BoxModule,
+  LayoutModule,
+  MenuModule,
+  SidebarModule,
+
   NbTabsetModule,
   NbRouteTabsetModule,
-  NbMenuModule,
+  MenuModule,
   NbUserModule,
   NbActionsModule,
   NbSearchModule,
-  NbSidebarModule,
   NbCheckboxModule,
-  NgbModule,
+
 ];
 
 const COMPONENTS = [
@@ -75,12 +79,12 @@ const PIPES = [
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'go-orange',
+      name: 'default',
     },
     [ DEFAULT_THEME, COSMIC_THEME, GO_ORANGE_THEME ],
   ).providers,
-  ...NbSidebarModule.forRoot().providers,
-  ...NbMenuModule.forRoot().providers,
+  ...SidebarModule.forRoot().providers,
+  ...MenuModule.forRoot().providers,
 ];
 
 @NgModule({

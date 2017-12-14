@@ -3,7 +3,7 @@
 
 @include nb-install-component() {
 
-  nb-card-header {
+  box-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     }
   }
 
-  nb-card-body {
+  box-body {
     padding-bottom: 0;
   }
 

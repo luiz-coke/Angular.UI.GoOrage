@@ -5,8 +5,8 @@ import { NbThemeService } from '@avanade/theme';
   selector: 'ngx-traffic',
   styleUrls: ['./traffic.component.scss'],
   template: `
-    <nb-card size="xsmall">
-      <nb-card-header>
+    <box size="xsmall">
+      <box-header>
         <span>Traffic Consumption</span>
         <div class="dropdown ghost-dropdown" ngbDropdown>
           <button type="button" class="btn btn-sm" ngbDropdownToggle
@@ -17,11 +17,11 @@ import { NbThemeService } from '@avanade/theme';
             <li class="dropdown-item" *ngFor="let t of types" (click)="type = t">{{ t }}</li>
           </ul>
         </div>
-      </nb-card-header>
-      <nb-card-body class="p-0">
+      </box-header>
+      <box-body class="p-0">
         <ngx-traffic-chart></ngx-traffic-chart>
-      </nb-card-body>
-    </nb-card>
+      </box-body>
+    </box>
   `,
 })
 export class TrafficComponent implements OnDestroy {

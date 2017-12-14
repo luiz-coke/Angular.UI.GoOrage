@@ -1,6 +1,6 @@
 @import '../../../../@theme/styles/themes';
 @import '~bootstrap/scss/mixins/breakpoints';
-@import '~@avanade/theme/components/card/card.component.theme';
+@import '~@avanade/theme/components/box/box.component.theme';
 @import '~@avanade/theme/styles/global/bootstrap/breakpoints';
 @import '~@avanade/theme/styles/core/mixins';
 
@@ -11,7 +11,7 @@
   height: 100%;
 
   .header {
-    @include nb-card-header();
+    @include box-header();
   }
 
   .body {
@@ -21,7 +21,7 @@
   }
 
   .footer {
-    padding: nb-theme(card-padding);
+    padding: nb-theme(box-padding);
     border-top: 1px solid nb-theme(separator);
   }
 
@@ -31,7 +31,7 @@
     justify-content: center;
     flex-direction: column;
     flex: 1;
-    padding: nb-theme(card-padding);
+    padding: nb-theme(box-padding);
 
     .cover {
       border-radius: nb-theme(radius) / 2;

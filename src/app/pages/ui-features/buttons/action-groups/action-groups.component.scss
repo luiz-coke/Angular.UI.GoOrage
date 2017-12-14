@@ -1,11 +1,11 @@
 @import '../../../../@theme/styles/themes';
-@import '~@avanade/theme/components/card/card.component.theme';
+@import '~@avanade/theme/components/box/box.component.theme';
 @import '~bootstrap/scss/mixins/breakpoints';
 @import '~@avanade/theme/styles/global/bootstrap/breakpoints';
 
 @include nb-install-component() {
 
-  nb-card-body {
+  box-body {
     display: flex;
     align-items: center;
   }
@@ -13,10 +13,10 @@
   .action-groups-header {
     flex-basis: 20%;
 
-    color: nb-theme(card-header-fg-heading);
-    font-family: nb-theme(card-header-font-family);
-    font-size: nb-theme(card-header-font-size);
-    font-weight: nb-theme(card-header-font-weight);
+    color: nb-theme(box-header-fg-heading);
+    font-family: nb-theme(box-header-font-family);
+    font-size: nb-theme(box-header-font-size);
+    font-weight: nb-theme(box-header-font-weight);
   }
 
   .nb-actions {
@@ -24,7 +24,7 @@
   }
 
   @include media-breakpoint-down(sm) {
-    nb-card-body {
+    box-body {
       flex-direction: column;
       align-items: flex-start;
       padding: 0.75rem;
@@ -68,7 +68,7 @@
         width: 1.5rem;
       }
     }
-    nb-card-body {
+    box-body {
       padding-left: 0;
       padding-right: 0;
     }
